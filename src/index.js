@@ -1,4 +1,6 @@
-import { app, BrowserWindow } from 'electron';
+import { app, BrowserWindow, NewWindowEvent} from 'electron';
+import { } from node_modules/bootstrap/dist/css/bootstrap.min.css
+import { } from node_modules/bootstrap/dist/js/bootstrap.min.js
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) { // eslint-disable-line global-require
@@ -8,6 +10,7 @@ if (require('electron-squirrel-startup')) { // eslint-disable-line global-requir
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow;
+let newWindowEvent;
 
 const createWindow = () => {
   // Create the browser window.
@@ -29,6 +32,8 @@ const createWindow = () => {
     // when you should delete the corresponding element.
     mainWindow = null;
   });
+  //const newWindowEvent = new NewWindowEvent();
+  
 };
 
 // This method will be called when Electron has finished
@@ -55,3 +60,6 @@ app.on('activate', () => {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and import them here.
+
+getElementById("v-pills-Monday").innerHTML = 
+
