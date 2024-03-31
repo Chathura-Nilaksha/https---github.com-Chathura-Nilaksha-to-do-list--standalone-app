@@ -1,7 +1,10 @@
 import { app, BrowserWindow, NewWindowEvent} from 'electron';
-import { } from '../node_modules/bootstrap/dist/css/bootstrap.css';
-import { } from '../node_modules/bootstrap/dist/js/bootstrap.min.js';
-import { filePath} from 'src/render/daywindow.html';
+
+//import { filePath} from 'src/render/daywindow.html';
+
+
+
+
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) { // eslint-disable-line global-require
@@ -62,7 +65,10 @@ app.on('activate', () => {
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and import them here.
 
+// function openDayTable(){
+//   document.getElementById("v-pills-Monday").innerHTML.src = "./render/daytable.html"; //loadURL(`file:..//src/render/daywindow.html`);
+//   //document.getElementById("v-pills-Monday").innerHTML.loadURL(`file://${__dirname}/daywindow.html`);
 
-//document.getElementById("v-pills-Monday").innerHTML = sssss ; //loadURL(`file:..//src/render/daywindow.html`);
-document.getElementById("v-pills-Monday").innerHTML.loadURL(`file://${__dirname}/daywindow.html`);
+// };
+
 
